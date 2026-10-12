@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-10-12
 ---
 
 # Morning digest
@@ -75,3 +76,19 @@ The preview shows lane data on a public link (ADR 0003). Delete the object; the 
 resolving. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link returns nothing.
+
+## Issues
+
+| # | Issue | Blocked by | Worker | Closed |
+|---|-------|-----------|--------|--------|
+| 1 | Digest types | — | claude-code · sonnet-5.5 · default | 2026-10-12 |
+| 2 | Run log reader | #1 | claude-code · sonnet-5.5 · default | 2026-10-12 |
+| 3 | Digest page | #1 | claude-code · haiku · low | 2026-10-12 |
+| 4 | Digest JSON | #1 | claude-code · haiku · low | 2026-10-12 |
+| 5 | Board links with counts | #1 | claude-code · haiku · low | 2026-10-12 |
+| 6 | Route tests | #1 | claude-code · haiku · low | 2026-10-12 |
+| 7 | Preview for review | #3 | claude-code · sonnet-5.5 · default | after the review |
+| 8 | Clean up | #7 | claude-code · sonnet-5.5 · default | when the link is dead |
+
+Rook looked at the preview and asked for it to be taken down. #7 was closed too early once
+and reopened: close it only after the review is in.
